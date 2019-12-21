@@ -381,8 +381,8 @@ header .box{
 .portfolio-gallery-section:hover .icon-plus{
 	opacity: 1;
 }
-
-
+.portfolio-gallery-slider{display: none;}
+.portfolio-sign-gallery{display: none;}
 
 .service .box{
 	display: flex;
@@ -754,22 +754,25 @@ header .box{
 
 @media (min-width: 768px) and (max-width: 1170px){
 	header .box{
-		padding-left: 4.3%;
-		padding-right: 4.3%;
+		background-color: rgba(24, 44, 61, .8);
+		
+	}
+	.box{
+		padding-left: 5.2%;
+		padding-right: 4.6%;
 		margin-left: auto;
 		margin-right: auto;
-		background-color: rgba(24, 44, 61, .8);
 	}
 	header{
 		background-image:  url(../img/768/coty-17-lifestyle-2.jpg);
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: 100%;
-		
 	}
 	.top-block{
 		justify-content: flex-end;
 		padding-top: 53px;
+		/*position: static;*/
 	}
 	.head-logo{
 		display: none;
@@ -790,6 +793,7 @@ header .box{
 		text-align: center;
 		padding-bottom: 125px;
 		padding-top: 0;
+
 	}
 	.design-title{
 		font-family: 'Playfair Display', Arial, serif;
@@ -812,6 +816,23 @@ header .box{
 		width: 439px;
 		font-size: 30px;
 		margin-bottom: 101px;
+	}
+	.design-menu+.design-nav{
+		width: 100%;
+		height: 100%;
+		top: 0;
+	}
+	.design-menu:hover+.design-nav{
+		display: flex;
+	}
+	.design-nav a{
+		color: #707C87;
+	}
+	.design-nav li{
+		margin-bottom: 40px;
+		text-align: center;
+		font-family: 'RalewaySemiBold', 'Arial', sans-serif;
+		font-size: 20px;
 	}
 	.design-btn:hover .arrow{
 		opacity: 0;
@@ -845,9 +866,271 @@ header .box{
 	.phone-num{display: none;}
 	.icon-soc{display: none;}
 	.slider-header{display: none;}
-	.com-block{
-		overflow: hidden;
+	
+	.work-list{
+		padding-top: 80px;
+		padding-bottom: 90px;
 	}
+	.work-plan-list li{
+		width: 50%;
+
+	}
+	.work-title{
+		font-size: 24px;
+		padding-right: 185px;
+	}
+	.work-text{
+		font-size: 18px;
+		padding-right: 180px;
+	}
+	.end{
+		padding-top: 160px;
+	}
+
+	.portfolio-title{
+		font-size: 55px;
+		padding-left: 5.2%;
+		padding-right: 4.6%;
+	}
+	.portfolio-list{
+		justify-content: space-between;
+		padding-left: 5.2%;
+		padding-right: 4.6%;
+		margin-bottom: 10px;
+	}
+	.portfolio-list li{
+		padding-right: 0;
+	}
+	.portfolio-list a{
+		font-size: 26px;
+	}
+	.portfolio-gallery-block{
+		display: none;
+	}
+	.portfolio .box{
+		width: 100%;
+		padding: 0;
+	}
+	.portfolio-gallery-slider{
+		width: 100%;
+		padding: 0;
+		display: flex;
+		overflow: hidden;
+		justify-content: space-between;
+	}
+	.portfolio-sign-gallery{
+		display: block;
+		width: 100%;
+		color: #00203a;
+		font-family: 'RalewaySemiBold', 'Arial', sans-serif;
+		font-size: 20px;
+		text-align: center;
+	}
+
+
+	.service .box{
+		padding: 0;
+		margin-bottom: 300px;
+	}
+	.service-title, .service-list, .serv-title, .serv-text {
+		padding-left: 5.2%;
+		padding-right: 4.6%;
+	}
+	.service-title{
+		width: 100%;
+		font-family: 'Playfair Display', Arial, serif;
+		font-size: 45px;
+		font-weight: bold;
+		margin-bottom: 47px;
+	}
+	.service-list{
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	.service-list li{
+		width: 50%;
+		margin-bottom: 83px;
+	}
+	.service-list .right:hover, 
+	.service-list .service-name:hover{
+		align-self: flex-end;
+		color: #00203a;
+		font-family: 'RalewaySemiBold', Arial, serif;
+		transition: .3s;
+	}
+	.right-block{
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		position: relative;
+	}
+	.serv-project{
+		font-size: 22px;
+		padding-right: 4.6%;
+	}
+	.serv-title{
+		font-weight: 500;
+		margin-bottom: 0;
+		margin-top: 60px;
+		letter-spacing: 2px;
+	}
+	.serv-text{
+		padding-right: 450px;
+	}
+	.service-name{
+		font-size: 22px;
+		padding-right: 0;
+	}
+	.serv-btn{
+		bottom: -100px;
+		left: 5.2%;
+		font-size: 18px;
+		width: 339px;
+		height: 67px;
+		padding: 24px 0;
+	}
+
+
+
+	.form-box{
+		display: flex;
+		width: 100%;
+		margin: 0;
+		background-image: none;
+
+	}
+	.form-sign{
+		max-width: 475px;
+		text-align: center;
+	}
+
+
+	.form-title{
+		font-family: 'Playfair Display', Arial, serif;
+		font-size: 45px;
+		font-weight: bold;
+		max-width: 510px;
+		text-align: center;
+	}
+	.form-text{
+		font-family: 'RalewayMedium', Arial, serif;
+		color: #79858e;
+		font-size: 22px;
+		margin-bottom: 30px;
+		margin-top: 0;
+		max-width: 520px;
+		text-align: center;
+	}
+	.form-sign{
+		font-family: 'RalewayLight', Arial, serif;
+		color: #b9bfc4;
+		font-size: 18px;
+		margin-top: 21px;
+		width: 475px;
+		letter-spacing: 1px;
+		/*padding: 0 80px;*/
+	}
+	.all{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+		height: 777px;
+		color: #fff;
+		padding-left: 95px;
+		padding-right: 95px;
+		padding-top: 41px;
+		position: relative;
+		background-image: url(../img/768/video768.jpg);
+		background-repeat: no-repeat;
+		background-position: right;
+	}
+	.right-form{
+		display: none;
+	}
+	.input{
+		background-color: inherit;
+		border: none;
+		width: 475px;
+		height: 40px;
+		color: #fff;
+		margin-bottom: 30px;
+		border-bottom: 2px solid #918e8b;
+		font-size: 18px;
+
+	}
+	.for-icon{
+		position: relative;
+		width: 475px;
+	}
+	.button{
+		width: 475px;
+		height: 72px;
+		padding: 27px 157px;
+		background-color: #f8a25a;
+		border: 2px solid #f8a25a;
+		font-size: 18px;
+	}
+
+	.com-box{
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		width: 100%;
+		justify-content: space-between;
+		padding-bottom: 145px;
+	}
+	.com-title{
+		width: 100%;
+		font-family: 'Playfair Display', Arial, serif;
+		font-weight: bold;
+		font-size: 45px;
+		margin-top: 145px;
+		margin-bottom: 77px;
+		padding: 0 95px;
+	}
+	.com-block{
+		background-color: #fff;
+		padding: 50px 140px 50px 70px;
+		position: relative;
+		height: 273px;
+		margin-left: 33px;
+		margin-right: 81px;
+		box-shadow: 8px 8px 51px 0px rgba(0, 0, 0, 0.02);
+	}
+	.flex-com-slider{
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+	.comment-slider{
+		display: flex;
+		margin-top: 76px;
+	}
+	.comment-slider li{
+		margin-right: 10px;
+	}
+	.comment-text{
+
+		color: #5e5e5e;
+		margin-bottom: 0;
+	}
+	.com-img{
+		position: absolute;
+		top: 15%;
+		right: -20%;
+	}
+	.com-img-block{
+		display: none;
+	}
+
+
+
+
 
 
 
