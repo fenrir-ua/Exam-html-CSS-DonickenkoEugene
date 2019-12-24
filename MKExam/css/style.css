@@ -79,8 +79,8 @@ ul{
 }
 .box{
 	max-width: 1360px;
-	padding-left: 95px;
-	padding-right: 95px;
+	padding-left: 6.98%;
+	padding-right: 6.98%;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -207,6 +207,7 @@ header .box{
 .design-menu:hover+.design-nav{
 	/*display:block;*/
 	display: flex;
+
 }
 .design-nav a{
 	color: #707C87;
@@ -492,7 +493,9 @@ header .box{
 	letter-spacing: .7px;
 	text-align: center;
 }
-
+.video-img-768{
+	opacity: 0;
+}
 
 
 .stage .box{
@@ -804,8 +807,8 @@ header .box{
 		line-height: 96px;
 		font-size: 100px;
 		max-width: 100%;
-		margin-top: 303px;
-		letter-spacing: 2.3px;
+		margin-top: 193px;
+		letter-spacing: 2.8px;
 		
 	}
 	.design-text{
@@ -813,8 +816,8 @@ header .box{
 		font-size: 26px;
 		padding-bottom: 61px;
 		max-width: 100%;
-		padding-left: 90px; 
-		padding-right: 90px;
+		padding-left: 15px; 
+		padding-right: 15px;
 	}
 	.design-btn{
 		padding: 40px 56px;
@@ -876,7 +879,7 @@ header .box{
 	.slider-header{display: none;}
 	
 	.work-list{
-		padding-top: 80px;
+		padding-top: 45px;
 		padding-bottom: 90px;
 	}
 	.work-plan-list li{
@@ -885,18 +888,18 @@ header .box{
 	}
 	.work-title{
 		font-size: 24px;
-		padding-right: 185px;
+		padding-right: 90px;
+		margin-bottom: 15px;
 	}
 	.work-text{
 		font-size: 18px;
-		padding-right: 180px;
+		padding-right: 90px;
 	}
 	.end{
 		padding-top: 160px;
 	}
 
 	.portfolio-title{
-		font-size: 55px;
 		padding-left: 5.2%;
 		padding-right: 4.6%;
 	}
@@ -905,12 +908,14 @@ header .box{
 		padding-left: 5.2%;
 		padding-right: 4.6%;
 		margin-bottom: 10px;
+		padding-top: 30px;
+		padding-bottom: 33px;
 	}
 	.portfolio-list li{
 		padding-right: 0;
 	}
 	.portfolio-list a{
-		font-size: 26px;
+		font-size: 22px;
 	}
 	.portfolio-gallery-block{
 		display: none;
@@ -926,6 +931,7 @@ header .box{
 		overflow: hidden;
 		justify-content: space-between;
 	}
+
 	.portfolio-sign-gallery{
 		display: block;
 		width: 100%;
@@ -933,12 +939,14 @@ header .box{
 		font-family: 'RalewaySemiBold', 'Arial', sans-serif;
 		font-size: 20px;
 		text-align: center;
+		margin-top: 36px;
+		letter-spacing: .6px;
 	}
 
 
 	.service .box{
 		padding: 0;
-		margin-bottom: 300px;
+		margin-bottom: 310px;
 	}
 	.service-title, .service-list, .serv-title, .serv-text {
 		padding-left: 5.2%;
@@ -950,7 +958,7 @@ header .box{
 		font-size: 45px;
 		font-weight: bold;
 		margin-bottom: 47px;
-		margin-top: 180px;
+		margin-top: 148px;
 	}
 	.service-list{
 		width: 100%;
@@ -977,10 +985,13 @@ header .box{
 		flex-direction: column;
 		position: relative;
 	}
+	.right-block img{
+		height: 390px;
+	}
 	.serv-project{
 		font-size: 22px;
 		padding-right: 4.6%;
-		bottom: 18%;
+		bottom: 19%;
 	}
 	.serv-title{
 		font-weight: 500;
@@ -989,7 +1000,7 @@ header .box{
 		letter-spacing: 2px;
 	}
 	.serv-text{
-		padding-right: 450px;
+		padding-right: 200px;
 	}
 	.service-name{
 		font-size: 22px;
@@ -1006,6 +1017,7 @@ header .box{
 
 	.videobox{
 		width: 100%;
+		height: 813px;
 		position: relative;
 	}
 	.player{
@@ -1013,19 +1025,28 @@ header .box{
 		top: 39%;
 		width: 100%;
 		font-family: 'RalewayMedium', Arial, serif;
-		font-size: 18px;
+		font-size: 22px;
 		color: #fff;
 		letter-spacing: .7px;
 		text-align: center;
-
+		z-index: 90;
+	}
+	.player img{
+		width: 127px;
+		height: 127px;
+	}
+	.player-text{
+		padding: 0 150px;
+	}
+	.video-img-768{
+		opacity: 1;
+		position: absolute;
+		top: 0;
 	}
 
-
-
-
 	.stage .box{
-		padding-top: 121px;
-		padding-bottom: 55px;
+		padding-top: 170px;
+		padding-bottom: 48px;
 	}
 	.stage-title{
 		width: 100%;
@@ -1036,14 +1057,14 @@ header .box{
 		margin: 0;
 	}
 	.stage-list{
-
-		padding-top: 63px;
+		padding-left: 20px;
+		padding-top: 58px;
 	}
 	.stage-list li{
 		width: 50%;
 		padding-left: 50px;
-		margin-bottom: 60px;
-		padding-right: 100px;
+		margin-bottom: 80px;
+		padding-right: 20px;
 	}
 	.stage-list li:before{
 		width: 25px;
@@ -1069,6 +1090,7 @@ header .box{
 		font-family: 'RalewaySemiBold', Arial, serif;
 		font-size: 22px;
 		margin: 0;
+		letter-spacing: -0.3px;
 	}
 	.stage-list-title:after{
 		content: '';
@@ -1148,7 +1170,7 @@ header .box{
 		width: 475px;
 		height: 40px;
 		color: #fff;
-		margin-bottom: 30px;
+		margin-bottom: 45px;
 		border-bottom: 2px solid #918e8b;
 		font-size: 18px;
 
@@ -1164,34 +1186,28 @@ header .box{
 		background-color: #f8a25a;
 		border: 2px solid #f8a25a;
 		font-size: 18px;
+		margin-top: 0;
 	}
 
 	.com-box{
 		padding-left: 5.2%;
 		padding-right: 4.6%;
-		display: flex;
-		align-items: center;
-		flex-wrap: wrap;
-		width: 100%;
-		justify-content: space-between;
-		padding-bottom: 145px;
+		padding-bottom: 139px;
 	}
 	.com-title{
 		width: 100%;
 		font-family: 'Playfair Display', Arial, serif;
 		font-weight: bold;
 		font-size: 45px;
-		margin-top: 145px;
-		margin-bottom: 77px;
+		margin-top: 177px;
+		margin-bottom: 55px;
 		padding: 0;
 	}
 	.com-block{
-		background-color: #fff;
 		padding: 50px 140px 50px 70px;
 		position: relative;
 		height: 273px;
 		margin-left: 0;
-		box-shadow: 8px 8px 51px 0px rgba(0, 0, 0, 0.02);
 	}
 	.flex-com-slider{
 		width: 100%;
@@ -1199,62 +1215,36 @@ header .box{
 		justify-content: center;
 	}
 	.comment-slider{
-		display: flex;
-		margin-top: 76px;
+		margin-top: 50px;
+		padding-left: 0;
 	}
 	.comment-slider li{
 		margin-right: 10px;
 	}
 	.comment-text{
-
+		line-height: 25px;
 		color: #5e5e5e;
 		margin-bottom: 0;
 	}
 	.com-img{
 		position: absolute;
-		top: 15%;
-		right: -20%;
+		top: 40%;
+		right: 0%;
 	}
 	.com-img-block{
 		display: none;
 	}
-
-
+	.com-block{
+		position: static;
+	}
+	.com-box{
+		position: relative;
+	}
 	.foot-box{
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		padding: 75px 95px;
-		width: 100%;
-		background-color: rgba(24, 44, 61, 1);
+		padding-left: 5.2%;
+		padding-right: 4.6%;
 	}
 	.footer-icon-list{
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
-		width: 110px;
-		padding-left: 0;
+		width: 120px;
 	}
-	.foot-logo{
-		width: 100%;
-		text-align: center;
-		margin-bottom: 30px;
-		margin-top: 0;
-	}
-	.foot-box span{
-		font-family: 'RalewayMedium', Arial, serif;
-		font-size: 16px;
-		color: #ffc487;
-	}
-}
-
-@media (min-width: 320px) and (max-width: 767px){
-
-
-
-
-
-
-
-
 }
